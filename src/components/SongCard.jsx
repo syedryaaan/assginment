@@ -15,10 +15,10 @@ function SongCard({ song, togglePlaylist, isInPlaylist }) {
 
       <p>Duration: {duration}</p>
 
-      {/* Trending badge */}
+
       {song.streams >= 1000000 && <p>Trending 🔥</p>}
 
-      {/* Playlist button */}
+
       <button onClick={() => togglePlaylist(song.id)}>
         {isInPlaylist ? "Remove from Playlist" : "Add to Playlist"}
       </button>
